@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CandiesSellerWCF.Business;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -11,8 +12,8 @@ namespace CandiesSellerWCF
     [ServiceContract]
     public interface ICandies
     {
-        //[OperationContract]
-
+        [OperationContract]
+        stockBusiness getStock();
         
     }
 }
